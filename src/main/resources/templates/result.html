@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span th:if="${not #lists.isEmpty(result)}">
+<table>
+    <tr th:each="fields:${result}}">
+        <td th:text="${fields.field}"></td>
+    </tr>
+</table>
+</span>
+<span th:if="${ #lists.isEmpty(result)}">
+<h1 th:text="${result}}"></h1>
+</span>
+</body>
+</html>
